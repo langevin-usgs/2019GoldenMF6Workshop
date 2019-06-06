@@ -1,0 +1,8 @@
+BEGIN options
+END options
+
+BEGIN sources
+  WEL-1  1  CONCENTRATION
+  GHB-1  1  CONCENTRATION
+END sources
+

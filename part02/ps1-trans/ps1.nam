@@ -1,0 +1,13 @@
+BEGIN OPTIONS
+  SAVE_FLOWS
+END OPTIONS
+
+BEGIN PACKAGES
+  DIS6       ps1.dis
+  IC6        ps1.ic
+  NPF6       ps1.npf
+  STO6       ps1.sto
+  OC6        ps1.oc
+  CHD6       ps1.chd
+  OBS6       ps1.obs
+END PACKAGES

@@ -1,0 +1,16 @@
+BEGIN options
+  NEWTON
+  SAVE_FLOWS
+END options
+
+BEGIN packages
+  DIS6  gwf_henry-nr.dis
+  IC6  gwf_henry-nr.ic
+  NPF6  gwf_henry-nr.npf
+  STO6  gwf_henry-nr.sto
+  BUY6  gwf_henry-nr.buy
+  GHB6  gwf_henry-nr.ghb  ghb-1
+  WEL6  gwf_henry-nr.wel  wel-1
+  OC6  gwf_henry-nr.oc  oc
+END packages
+

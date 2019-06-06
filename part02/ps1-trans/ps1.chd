@@ -1,0 +1,54 @@
+BEGIN OPTIONS
+  TS6 FILEIN ps1.chd.ts
+END OPTIONS
+
+BEGIN DIMENSIONS
+  MAXBOUND 42
+END DIMENSIONS
+
+BEGIN PERIOD 1
+# canal
+ 1  1 1  330.0    
+ 1  2 1  330.0    
+ 1  3 1  330.0    
+ 1  4 1  330.0    
+ 1  5 1  330.0    
+ 1  6 1  330.0    
+ 1  7 1  330.0    
+ 1  8 1  330.0    
+ 1  9 1  330.0    
+ 1 10 1  330.0    
+ 1 11 1  330.0    
+ 1 12 1  330.0    
+ 1 13 1  330.0    
+ 1 14 1  330.0    
+ 1 15 1  330.0    
+ 1 16 1  330.0    
+ 1 17 1  330.0    
+ 1 18 1  330.0    
+ 1 19 1  330.0    
+ 1 20 1  330.0    
+ 1 21 1  330.0    
+# river
+ 1  1 20  tidal    
+ 1  2 20  tidal    
+ 1  3 20  tidal    
+ 1  4 20  tidal    
+ 1  5 20  tidal    
+ 1  6 20  tidal    
+ 1  7 20  tidal    
+ 1  8 20  tidal    
+ 1  9 20  tidal    
+ 1 10 20  tidal    
+ 1 11 20  tidal    
+ 1 12 20  tidal    
+ 1 13 20  tidal    
+ 1 14 20  tidal    
+ 1 15 20  tidal    
+ 1 16 20  tidal    
+ 1 17 20  tidal    
+ 1 18 20  tidal    
+ 1 19 20  tidal    
+ 1 20 20  tidal    
+ 1 21 20  tidal    
+END PERIOD

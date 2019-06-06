@@ -1,0 +1,218 @@
+                                   MODFLOW 6
+                U.S. GEOLOGICAL SURVEY MODULAR HYDROLOGIC MODEL
+                          GROUNDWATER FLOW MODEL (GWF)
+                            VERSION 6.0.4 03/13/2019
+
+  MODFLOW 6 compiled Mar 14 2019 09:20:00 with GFORTRAN compiler (ver. 8.2.0)
+
+This software has been approved for release by the U.S. Geological 
+Survey (USGS). Although the software has been subjected to rigorous 
+review, the USGS reserves the right to update the software as needed 
+pursuant to further analysis and review. No warranty, expressed or 
+implied, is made by the USGS or the U.S. Government as to the 
+functionality of the software and related material nor shall the 
+fact of release constitute any such warranty. Furthermore, the 
+software is released on condition that neither the USGS nor the U.S. 
+Government shall be held liable for any damages resulting from its 
+authorized or unauthorized use. Also refer to the USGS Water 
+Resources Software User Rights Notice for complete use, copyright, 
+and distribution information.
+
+
+MODFLOW was compiled using uniform precision.
+Precision of REAL variables: 15
+
+
+ OPENED model.dis
+ FILE TYPE:DIS6                   UNIT 1005   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED model.ic
+ FILE TYPE:IC6                    UNIT 1006   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED model.npf
+ FILE TYPE:NPF6                   UNIT 1007   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED model.chd
+ FILE TYPE:CHD6                   UNIT 1008   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED model.rcha
+ FILE TYPE:RCH6                   UNIT 1009   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED model.riv
+ FILE TYPE:RIV6                   UNIT 1010   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+
+ OPENED model.oc
+ FILE TYPE:OC6                    UNIT 1011   STATUS:OLD                 
+ FORMAT:FORMATTED              ACCESS:SEQUENTIAL          
+ ACTION:READ                
+
+ NAMEFILE OPTIONS:
+    FLOWS WILL BE SAVED TO BUDGET FILE SPECIFIED IN OUTPUT CONTROL
+
+ DIS -- STRUCTURED GRID DISCRETIZATION PACKAGE, VERSION 2 : 3/27/2014 - INPUT READ FROM UNIT 1005
+
+
+ PROCESSING DISCRETIZATION OPTIONS
+ END OF DISCRETIZATION OPTIONS
+ MODEL LENGTH UNIT IS UNDEFINED
+ PROCESSING DISCRETIZATION DIMENSIONS
+    NLAY =       5
+    NROW =      40
+    NCOL =      25
+ END OF DISCRETIZATION DIMENSIONS
+ PROCESSING GRIDDATA
+
+                     DELR =   500.0000    
+
+                     DELC =   500.0000    
+
+ TOP ELEVATION OF LAYER 1 =   100.0000    
+ END PROCESSING GRIDDATA
+
+ NPF -- NODE PROPERTY FLOW PACKAGE, VERSION 1, 3/30/2015 INPUT READ FROM UNIT 1007
+
+
+ PROCESSING NPF OPTIONS
+ END OF NPF OPTIONS
+
+ RIV   -- RIV PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1010
+
+ PROCESSING RIV OPTIONS
+ END OF RIV OPTIONS
+
+ PROCESSING RIV DIMENSIONS
+    MAXBOUND =      18
+ END OF RIV DIMENSIONS
+
+ RCH   -- RCH PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1009
+
+ PROCESSING RCH OPTIONS
+    RECHARGE INPUT WILL BE READ AS ARRAY(S).
+ END OF RCH OPTIONS
+
+ CHD   -- CHD PACKAGE, VERSION 8, 2/22/2014 INPUT READ FROM UNIT 1008
+
+ PROCESSING CHD OPTIONS
+ END OF CHD OPTIONS
+
+ PROCESSING CHD DIMENSIONS
+    MAXBOUND =      65
+ END OF CHD DIMENSIONS
+
+ IC -- INITIAL CONDITIONS PACKAGE, VERSION 8, 3/28/2015 INPUT READ FROM UNIT 1006
+ PROCESSING GRIDDATA
+
+     INITIAL HEAD =   11.00000    
+ END PROCESSING GRIDDATA
+ PROCESSING GRIDDATA
+
+                ICELLTYPE = 1 FOR LAYER 1
+
+                ICELLTYPE = 0 FOR LAYER 2
+
+                ICELLTYPE = 0 FOR LAYER 3
+
+                ICELLTYPE = 0 FOR LAYER 4
+
+                ICELLTYPE = 0 FOR LAYER 5
+ K22 not provided.  Assuming K22 = K.
+ END PROCESSING GRIDDATA
+    BINARY GRID INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1013
+      FILE NAME: model.dis.grb
+
+ OPENED model.dis.grb
+ FILE TYPE:DATA(BINARY)   UNIT 1013   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+      THE LAST TIME STEP WILL BE PRINTED
+      THE LAST TIME STEP WILL BE PRINTED
+ PROCESSING OC OPTIONS
+    BUDGET INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1014
+      FILE NAME: mv.bud
+
+ OPENED mv.bud
+ FILE TYPE:DATA(BINARY)   UNIT 1014   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+    HEAD INFORMATION WILL BE WRITTEN TO:
+      UNIT NUMBER: 1015
+      FILE NAME: mv.hds
+
+ OPENED mv.hds
+ FILE TYPE:DATA(BINARY)   UNIT 1015   STATUS:REPLACE             
+ FORMAT:UNFORMATTED            ACCESS:STREAM              
+ ACTION:READWRITE           
+
+ END OF OC OPTIONS
+
+ BEGIN READING OUTPUT CONTROL FOR STRESS PERIOD 1
+      ALL TIME STEPS WILL BE SAVED
+      ALL TIME STEPS WILL BE SAVED
+
+ END READING OUTPUT CONTROL FOR STRESS PERIOD 1
+
+                 RECHARGE =  0.3641000E-02
+ UBDSV1 SAVING     FLOW-JA-FACE ON UNIT   1014 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING       DATA-SPDIS IN MODEL MODEL            PACKAGE NPF             CONNECTED TO MODEL MODEL            PACKAGE NPF              ON UNIT   1014 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RIV IN MODEL MODEL            PACKAGE MODEL           CONNECTED TO MODEL MODEL            PACKAGE RIV_0            ON UNIT   1014 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              RCH IN MODEL MODEL            PACKAGE MODEL           CONNECTED TO MODEL MODEL            PACKAGE RCHA             ON UNIT   1014 AT TIME STEP      1, STRESS PERIOD      1
+ UBDSV06 SAVING              CHD IN MODEL MODEL            PACKAGE MODEL           CONNECTED TO MODEL MODEL            PACKAGE CHD_0            ON UNIT   1014 AT TIME STEP      1, STRESS PERIOD      1
+
+ HEAD WILL BE SAVED ON UNIT 1015 AT END OF TIME STEP    1, STRESS PERIOD    1
+
+
+  VOLUME BUDGET FOR ENTIRE MODEL AT END OF TIME STEP    1, STRESS PERIOD   1
+  ---------------------------------------------------------------------------------------------------
+
+     CUMULATIVE VOLUME      L**3       RATES FOR THIS TIME STEP      L**3/T          PACKAGE NAME    
+     ------------------                 ------------------------                     ----------------
+
+           IN:                                      IN:
+           ---                                      ---
+                 RIV =           0.0000                   RIV =           0.0000     RIV_0           
+                 RCH =      851083.7500                   RCH =      851083.7500     RCHA            
+                 CHD =       94539.1948                   CHD =       94539.1948     CHD_0           
+
+            TOTAL IN =      945622.9448              TOTAL IN =      945622.9448
+
+          OUT:                                     OUT:
+          ----                                     ----
+                 RIV =      883396.1173                   RIV =      883396.1173     RIV_0           
+                 RCH =           0.0000                   RCH =           0.0000     RCHA            
+                 CHD =       62221.8090                   CHD =       62221.8090     CHD_0           
+
+           TOTAL OUT =      945617.9263             TOTAL OUT =      945617.9263
+
+            IN - OUT =           5.0185              IN - OUT =           5.0185
+
+ PERCENT DISCREPANCY =           0.00     PERCENT DISCREPANCY =           0.00
+
+
+
+
+         TIME SUMMARY AT END OF TIME STEP    1 IN STRESS PERIOD    1
+                          TIME STEP LENGTH =    1.00000    
+                        STRESS PERIOD TIME =    1.00000    
+                     TOTAL SIMULATION TIME =    1.00000    

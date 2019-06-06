@@ -1,0 +1,5 @@
+3                                         # NUMBER OF PARTICLES
+  0.  -500.  -250.     1.0  0.0  0.0     # X Y Z   RED GRN BLU
+  0.  -500.  -350.     0.0  0.7  0.0     # X Y Z   RED GRN BLU
+  0.  -500.  -450.     0.0  0.0  1.0     # X Y Z   RED GRN BLU
+

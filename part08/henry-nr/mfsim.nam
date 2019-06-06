@@ -1,0 +1,22 @@
+BEGIN options
+  CONTINUE
+END options
+
+BEGIN timing
+  TDIS6  henry-nr.tdis
+END timing
+
+BEGIN models
+  gwf6  gwf_henry-nr.nam  gwf_henry-nr
+  gwt6  gwt_henry-nr.nam  gwt_henry-nr
+END models
+
+BEGIN exchanges
+  GWF6-GWT6  henry-nr.gwfgwt  gwf_henry-nr  gwt_henry-nr
+END exchanges
+
+BEGIN solutiongroup  1
+  ims6  gwf_henry-nr.ims  gwf_henry-nr
+  ims6  gwt_henry-nr.ims  gwt_henry-nr
+END solutiongroup  1
+

@@ -1,0 +1,5 @@
+BEGIN griddata
+  porosity
+    CONSTANT       0.35000000
+END griddata
+
